@@ -1,0 +1,16 @@
+ {% load static %}
+ <!-- Instagram Feed Area -->
+        <div class="instragram-feed-area owl-carousel">
+            <!-- Single Instagram Item -->
+            {% for image in instagram %}
+                <div class="single-instagram-item">
+                    <img src={{image.image.url}} alt="">
+                    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                        <a href="https://www.instagram.com/jhonfmg" target="_blank">
+                            <i class="ti-instagram" aria-hidden="true"></i>
+                            <span>Jhon Mármol</span>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
